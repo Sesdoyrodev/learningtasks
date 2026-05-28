@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Top 10 Favorite Celebrities</title>
 
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* SHOW DESCRIPTION WHEN CLICKED */
+        input:checked + .card .description {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body style="background: linear-gradient(to right, #667eea, #764ba2);">
+
+<h1>My Top 10 Favorite Celebrities</h1>
+
+<div class="container">
+
+    <!-- CARD TEMPLATE (copy for all) -->
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 1: Choi Yeonjun</h3>
+            <img src="yeonjun" width="150" height="170">
+            <p> Born on September 13, 1999 (Age 26) Known as the legendary "BigHit Legendary Trainee," Yeonjun consistently ranked first in dance, vocal, and rap evaluations during his 5-year training period. </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 2: Choi Soobin</h3>
+            <img src="Soobin" width="150" height="170">
+            <p> Born December 5, 2000 (Age 25) is the official leader of TXT. Known as a "loud introvert," he serves as the calm, emotionally supportive core of the group. </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 3: Choi Beomgyu</h3>
+            <img src="Beomgyu" width="150" height="170" >
+            <p> Born on March 13, 2001 (Age 25) Hailing from Daegu, Beomgyu is famously known as TXT's energetic "mood maker". </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 4: Kang Taehyun</h3>
+            <img src="taehyun" width="150" height="170">
+            <p> Born on February 5, 2002 (Age 24) He is recognized as the logical "brain" and powerhouse vocalist of the group, boasting an impressive vocal range and specialized falsetto.  </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 5: Huening Kai</h3>
+            <img src="Hueningkai" width="150" height="170">
+            <p> Born on August 14, 2002 (Age 23) is the group's youngest member (maknae) and Big Hit's first international artist. </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 6: Zhao Yufan </h3>
+            <img src="James.jpg" width="150" height="170">
+            <p> Age 20, Hong Kong / Taiwan (Thai-Chinese) The oldest member and performance pillar. </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 7: Martin Edwards Park</h3>
+            <img src="Martin.jpg" width="150" height="170">
+            <p> Age 18, Canada / South Korea The group's leader and production prodigy. </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 8: Kim Ju-hoon</h3>
+            <img src="Juhoon.jpg" width="150" height="170">
+            <p> Age 18, South Korea A popular member with sophisticated R&B vocal sensibilities.</p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 9: Eom Sung-hyun</h3>
+            <img src="Seonghyeon.jpg" width="150" height="170">
+            <p> Age 17, South KoreaThe group's primary melodic topliner and songwriter from Daejeon.  </p>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="card">
+            <h3>Top 10: Ahn Geon-ho</h3>
+            <img src="Keonho.jpg" width="150" height="170">
+            <p> Age 17, South KoreaThe group's maknae (youngest member) and visual center. </p>
+        </div>
+    </label>
+
+</div>
+
+</body>
+</html>
