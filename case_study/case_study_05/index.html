@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f7ffc8;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#df9563
+    ;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.banner{
+    flex:1;
+    height:120px;
+    background:url("images/banner.jpg") center/cover;
+    background-color:#df9563;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    font-weight:bold;
+}
+
+
+nav{
+    margin:20px 0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+nav a{
+    text-decoration:none;
+    background:#df9563;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#c50000;
+}
+
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.food-card{
+    background:rgb(255, 243, 136);
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.food-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.food-card h3{
+    color:#d62828;
+    margin:10px 0;
+}
+
+.food-card p{
+    padding:0 10px;
+}
+
+.btn{
+    display:inline-block;
+    margin:15px;
+    padding:10px 20px;
+    background:#f0d4b4;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d19e5c;
+    color:white;
+}
+
+
+footer{
+    background:#d19e5c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+}
+
+.menu-grid{
+    grid-template-columns:1fr;
+}
+
+.banner{
+    width:100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  
+ <div class="header">
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="logo.jpeg" alt="Restaurant Logo">
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="banner.png" alt="Restaurant Banner">
+
+        <div class="banner-text">
+        </div>
+    </div>
+
+</div>
+<style>
+* LOGO */
+.logo{
+    width:120px;
+    height:120px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ffcc00;
+}
+* BANNER */
+.banner{
+    flex:1;
+    height:120px;
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.banner-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    width:100%;
+}
+
+.banner-text h1{
+    font-size:32px;
+    text-shadow:2px 2px 5px black;
+}
+
+.banner-text p{
+    font-size:16px;
+    text-shadow:2px 2px 5px black;
+}
+
+</style>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="branches.html">Branches</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="feedback.html">Customer Feedback</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="menu-grid">
+
+        <div class="food-card">
+            <img src="Ube Flan Cake.jpg" alt="Burger">
+            <h3>Ube Flan Cake</h3>
+            <p>Delicious Filipino dessert with ube (purple yam) flavor.</p>
+            <a href="food1.html" class="btn">View Details</a>
+        </div>
+
+        <div class="food-card">
+            <img src="Cashew Almond Sansrival.jpg" alt="Pizza">
+            <h3>Cashew Almond Sansrival</h3>
+            <p>Delicious Filipino snack with cashew and almond flavors.</p>
+            <a href="food2.html" class="btn">View Details</a>
+        </div>
+
+        <div class="food-card">
+            <img src="pizza.jpg" alt="Pasta">
+            <h3> Basil Pizza </h3>
+            <p>Delicious Italian pizza with basil and other ingredients.</p>
+            <a href="food3.html" class="btn">View Details</a>
+        </div>
+
+        <div class="food-card">
+            <img src="Blueberry Cheesecake.jpg" alt="Chicken">
+            <h3>Blueberry Cheesecake</h3>
+            <p>Delicious Filipino creamy cheesecake with blueberry flavor.</p>
+            <a href="food4.html" class="btn">View Details</a>
+        </div>
+
+        <div class="food-card">
+            <img src="Cajun Alfredo Pasta.jpg" alt="Salad">
+            <h3>Cajun Alfredo Pasta</h3>
+            <p>Delicious Filipino pasta with a Cajun twist.</p>
+            <a href="food5.html" class="btn">View Details</a>
+        </div>
+
+        <div class="food-card">
+            <img src="Strawberry Matcha Cake.jpg" alt="Ice Cream">
+            <h3>Strawberry Matcha Cake</h3>
+            <p>Delicious Filipino dessert with real strawberry chunks and matcha flavor.</p>
+            <a href="food6.html" class="btn">View Details</a>
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2025 Restaurant | All Rights Reserved
+</footer>
+
+</body>
+</html>

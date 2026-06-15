@@ -1,0 +1,21 @@
+
+body
+{ 
+background-image: url('background.jpg');
+font-family: "Times new roman";
+color: #332709;
+}
+
+h1 { 
+font-family: "Times new roman";
+color: #332709;
+}
+tbody tr {
+font-family: "Times new roman";
+font-size: 16px;
+}
+
+tbody tr:hover {
+background-color: ECEODA;
+color: #a88732;
+}
